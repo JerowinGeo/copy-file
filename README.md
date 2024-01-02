@@ -1,44 +1,49 @@
-# Read-from-CSV
+# copy-file
+
 ## AIM:
-## ALGORITHM:
+To write a python program for copying the contents from one file to another file.
+
+## EQUIPEMENT'S REQUIRED: 
+PC
+Anaconda - Python 3.7
+## ALGORITHM: 
 ### Step 1:
-Create a spreadsheet with any details in it with the extension .csv .
+Create a file using Notepad with the file1.txt .
 
 ### Step 2:
 Open Google Colab and mount the drive for using the created file in the Colab.
 
 ### Step 3:
-Import pandas package as pd for reading the csv file using pd.read_csv(filename).
+Now open the text file in read mode.
 
 ### Step 4:
-Use the functions called head() and tail() for printing the top and bottom of the file and then axes[ ] used for finding the number of rows and columns.
+Then read the content in the file and store the data in a variable.
 
 ### Step 5:
-End the Program.
+Now open the new uncreated or an empty file using a different file object, by "w+" mode and write the content derived from first file using write().
+
+### Step 6:
+End the program
+
+
 
 ## PROGRAM:
-#To write a python program to read a csv file.
-#Developed By: Jerowin Geo J A
+```
+#Program To write a python program for copying the contents from one file to another file.
+#Developed by: Jerowin Geo J A
 #Register Number: 212223100016
-import pandas as pd
-df=pd.read_csv('cars.csv')
-print(df.head(3))
-print(df.tail(7))
-print(df.axes[0],len(df.axes[0]))
-print(df.axes[1],len(df.axes[1]))
-print(df.loc[2:6,:])
+def fun(filename,newfilename):
+    with open(filename) as fp:
+        with open(newfilename,'w') as fpl:
+            data=fp.read()
+            fpl.write(data)
+filename=input("Enter the file to read the content:")
+newfilename=input("Enter the file to store copied content:")
+fun(filename,newfilename)
+```
+### OUTPUT:
+![image](https://github.com/JerowinGeo/command-line-arguments-to-count-word/assets/147139744/79d33527-7b27-48c5-a685-d37025caadd1)
 
-## OUTPUT:
-### CODE AND OUTPUT:
-![image](https://github.com/JerowinGeo/copy-file/assets/147139744/8b8325bc-fc8b-4296-9dc7-2463b81a9d27)
-
-
-### CARS.CSV:
-![image](https://github.com/JerowinGeo/copy-file/assets/147139744/55ed9afc-03cc-4eae-8e0d-4eb63f0a25b4)
-
-### EXCEL:
-![image](https://github.com/JerowinGeo/copy-file/assets/147139744/9cbe7922-d496-4f49-92f3-97bfdc9bafec)
 
 ## RESULT:
-Thus the program is written to read the csv file using the package pandas.
-
+Thus the program is written to find the word count from the contents of a file using command line arguments.
