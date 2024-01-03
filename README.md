@@ -42,7 +42,12 @@ newfilename=input("Enter the file to store copied content:")
 fun(filename,newfilename)
 ```
 ### OUTPUT:
+#### CODE AND OUTPUT
 ![image](https://github.com/JerowinGeo/command-line-arguments-to-count-word/assets/147139744/79d33527-7b27-48c5-a685-d37025caadd1)
+#### ORIGINAL FILE
+![image](https://github.com/JerowinGeo/copy-file/assets/147139744/df67fe98-2927-4118-8d83-a2d73bfb0c9e)
+#### COPIED FILE
+![image](https://github.com/JerowinGeo/copy-file/assets/147139744/75772b98-9193-4891-a9d5-d8852b09a798)
 
 
 ## RESULT:
